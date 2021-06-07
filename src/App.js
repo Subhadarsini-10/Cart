@@ -81,8 +81,9 @@ getCartTotal = () => {
 
   let cartTotal = 0
 
+  // eslint-disable-next-line
   product.map((products) => {
-    cartTotal += products.Qty * products.price
+    cartTotal = cartTotal+ products.Qty * products.price
   })
   return cartTotal
 }
